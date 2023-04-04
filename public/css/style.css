@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #663399;
+    padding: 10px 20px;
+  }
+  
+  header h1 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  header nav ul li {
+    margin-right: 20px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    color: #ddd;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+    transition: all 0.3s ease;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .card .card-content {
+    padding: 20px;
+  }
+  
+  .card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .card .btn {
+    display: inline-block;
+    background-color: #663399;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .card .btn:hover {
+    background-color: #5a2d91;
+    color: #fff;
+  }
+  
+  footer {
+    background-color: #663399;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .greeting {
+    align-items: center;
+  }
+
+  .poll-form {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 2px solid purple;
+    padding: 20px;
+    width: 40%;
+    margin-right: 20px;
+    margin-left: 20px;
+    float: left;
+  }
+  
+  .poll-form label {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 30px
+  }
+  
+  .poll-form .form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .btn-primary {
+    background-color: purple;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #7B3DB9;
+  }
+  
+ 
+.poll-card {
+  border: 2px solid purple;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  float: left; 
+  width: 40%;
+  box-sizing: border-box;
+  margin-left: 20px; 
+  
+}
+  
+  #poll-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .poll-card button {
+    margin-right: 10px;
+    border-radius: 20px;
+    background-color: #ccc;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .poll-card button:hover {
+    background-color: purple;
+  }
+
+  .poll-card button {
+    margin-right: 10px;
+    border-radius: 20px;
+    background-color: #ccc;
+    color: black; 
+    border: none;
+    padding: 5px 15px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .poll-card button:hover {
+    background-color: purple;
+    color: white; 
+  }

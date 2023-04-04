@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS polling_db;
+
+CREATE DATABASE polling_db;

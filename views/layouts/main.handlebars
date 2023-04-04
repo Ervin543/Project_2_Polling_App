@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polling-App</title>
+  <link rel="stylesheet" href="/css/style.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Rollie Pollies</h1>
+  </header>
+  <nav>
+    <a href="/">Home</a>
+    {{#if loggedIn}}
+    <button id="logout" class="btn-no-style">Logout</button>
+    {{else}}
+    <a href="/api/users/login">Login</a>
+    {{/if}}
+  </nav>
+  <main>
+    <aside>
+      <h2></h2>
+    </aside>
+    <div class="greeting">
+      {{{body}}}
+    </div>
+  </main>
+  {{#if loggedIn}}
+
+<div>
+  <form class="poll-form">
+    <div class="form-group">
+      <label for="question-form">Please Enter your question here:</label>
+      <input class="form-input" type="text" id="question" />
+    </div>
+    <div class="poll-form">
+      <label for="answer1-form">Option 1:</label>
+      <input class="form-input" type="text" id="answer1" />
+    </div>
+    <div class="poll-form">
+      <label for="answer2-form">Option 2:</label>
+      <input class="form-input" type="text" id="answer2" />
+    </div>
+    <div class="poll-form">
+      <button class="btn btn-primary" type="submit" id="addPollbutton">Create Poll</button>
+    </div>
+  </form>
+</div>
+
+<div id="poll-card" class="card" style="display:none;">
+  <div class="card-header">
+    <h3 id="poll-question"></h3>
+  </div>
+  <div class="card-body">
+    <div id="poll-answers"></div>
+    <canvas></canvas>
+  </div>
+</div>
+
+<ul id="poll-list"></ul>
+
+
+
+  {{/if}}
+
+  <script src="/js/polls.js"></script>
+  <script src="/js/logout.js"></script>
+</body>
+
+</html>
